@@ -28,15 +28,27 @@ namespace Fiscord
                     if (chanmsg.StartsWith("\\"))
                     {
                         if (chanmsg.Contains("lol"))
-                           await e.Channel.SendMessage("fisk");
+                            await e.Channel.SendMessage("fisk");
+                    }
+                    //if(chanmsg.Contains("top10anime", CompareOptions.IgnoreCase) || chanmsg.Contains("top 10 anime") || chanmsg.Contains("topp 10 anime"))
+                    if (chanmsg.IndexOf("top10anime", 0, StringComparison.CurrentCultureIgnoreCase) != -1
+                    || chanmsg.IndexOf("top 10 anime", 0, StringComparison.CurrentCultureIgnoreCase) != -1
+                    || chanmsg.IndexOf("topp 10 anime", 0, StringComparison.CurrentCultureIgnoreCase) != -1)
+                    {
+                                for (int i = 10; i > 0; i--)
+                                {
+                                    await Task.Delay(1500);
+                                    await e.Channel.SendMessage(i + ". Naruto");
+                                }
                     }
                 }
-        Debug.WriteLine("msg");
+                Debug.WriteLine("msg");
             };
 
-    _client.ExecuteAndWait(async() => {
+            _client.ExecuteAndWait(async () =>
+            {
                 await _client.Connect("MjA3OTQzNDA5NjQ4OTI2NzIw.Cnqd5A.6M7E6XWfGVpEdeR1tS5OoENuik4");
-    Debug.WriteLine("auth");
+                Debug.WriteLine("auth");
             });
         }
     }
