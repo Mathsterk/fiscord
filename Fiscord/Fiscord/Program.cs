@@ -30,16 +30,21 @@ namespace Fiscord
                         if (chanmsg.Contains("lol"))
                             await e.Channel.SendMessage("fisk");
                     }
-                    //if(chanmsg.Contains("top10anime", CompareOptions.IgnoreCase) || chanmsg.Contains("top 10 anime") || chanmsg.Contains("topp 10 anime"))
+                    //if(chanmsg.Contains("top10anime") || chanmsg.Contains("top 10 anime") || chanmsg.Contains("topp 10 anime"))
                     if (chanmsg.IndexOf("top10anime", 0, StringComparison.CurrentCultureIgnoreCase) != -1
                     || chanmsg.IndexOf("top 10 anime", 0, StringComparison.CurrentCultureIgnoreCase) != -1
                     || chanmsg.IndexOf("topp 10 anime", 0, StringComparison.CurrentCultureIgnoreCase) != -1)
                     {
-                                for (int i = 10; i > 0; i--)
-                                {
-                                    await Task.Delay(1500);
-                                    await e.Channel.SendMessage(i + ". Naruto");
-                                }
+                        for (int i = 10; i > 0; i--)
+                        {
+                            await Task.Delay(1500);
+                            await e.Channel.SendMessage(i + ". Naruto");
+                        }
+                    }
+                    if (chanmsg.IndexOf("how 2 be otaku", 0, StringComparison.CurrentCultureIgnoreCase) != -1
+                    || chanmsg.IndexOf("how to be otaku", 0, StringComparison.CurrentCultureIgnoreCase) != -1)
+                    {
+                        await e.Channel.SendMessage("https://www.youtube.com/watch?v=YvLsWydCkzQ");
                     }
                 }
                 Debug.WriteLine("msg");
