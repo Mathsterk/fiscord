@@ -25,9 +25,9 @@ namespace Fiscord
             };
 
             _client.ExecuteAndWait(async () => {
-                await _client.Connect("aaaaabbbbbbcccccdddddeeeeefffffggggg")
+                await _client.Connect("MjA3OTQzNDA5NjQ4OTI2NzIw.Cnqd5A.6M7E6XWfGVpEdeR1tS5OoENuik4");
             });
         }
     }
 }
-}
+
