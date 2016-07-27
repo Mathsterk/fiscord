@@ -22,13 +22,21 @@ namespace Fiscord
             _client.MessageReceived += async (s, e) =>
             {
                 if (!e.Message.IsAuthor)
+                {
                     await e.Channel.SendMessage(e.Message.Text);
-                Debug.WriteLine("msg");
+                    string chanmsg = e.Message.Text;
+                    if (chanmsg.StartsWith("\\"))
+                    {
+                        if (chanmsg.Contains("lol"))
+                           await e.Channel.SendMessage("fisk");
+                    }
+                }
+        Debug.WriteLine("msg");
             };
 
-            _client.ExecuteAndWait(async () => {
+    _client.ExecuteAndWait(async() => {
                 await _client.Connect("MjA3OTQzNDA5NjQ4OTI2NzIw.Cnqd5A.6M7E6XWfGVpEdeR1tS5OoENuik4");
-                Debug.WriteLine("auth");
+    Debug.WriteLine("auth");
             });
         }
     }
