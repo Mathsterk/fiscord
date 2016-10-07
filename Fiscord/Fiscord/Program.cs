@@ -52,7 +52,7 @@ namespace Fiscord
 
             _client.ExecuteAndWait(async () =>
             {
-                await _client.Connect("MjA3OTQzNDA5NjQ4OTI2NzIw.Cnqd5A.6M7E6XWfGVpEdeR1tS5OoENuik4");
+                await _client.Connect("MjA3OTQzNDA5NjQ4OTI2NzIw.CtmQjg.OO-fmxMCipr124nQtUAXP3uYY8c", TokenType.Bot);
                 Debug.WriteLine("auth");
             });
         }
