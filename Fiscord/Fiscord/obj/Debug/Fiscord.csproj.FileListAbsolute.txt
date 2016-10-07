@@ -66,9 +66,3 @@ C:\Users\Mathsterk\Documents\GitHub\fiscord\Fiscord\Fiscord\bin\Debug\RestSharp.
 C:\Users\Mathsterk\Documents\GitHub\fiscord\Fiscord\Fiscord\bin\Debug\System.Text.Encodings.Web.xml
 C:\Users\Mathsterk\Documents\GitHub\fiscord\Fiscord\Fiscord\obj\Debug\Fiscord.exe
 C:\Users\Mathsterk\Documents\GitHub\fiscord\Fiscord\Fiscord\obj\Debug\Fiscord.pdb
-C:\Users\Mathsterk\Documents\GitHub\fiscord\Fiscord\Fiscord\bin\Debug\libmp3lame.32.dll
-C:\Users\Mathsterk\Documents\GitHub\fiscord\Fiscord\Fiscord\bin\Debug\libmp3lame.64.dll
-C:\Users\Mathsterk\Documents\GitHub\fiscord\Fiscord\Fiscord\bin\Debug\NAudio.dll
-C:\Users\Mathsterk\Documents\GitHub\fiscord\Fiscord\Fiscord\bin\Debug\NAudio.Lame.dll
-C:\Users\Mathsterk\Documents\GitHub\fiscord\Fiscord\Fiscord\bin\Debug\NAudio.WindowsMediaFormat.dll
-C:\Users\Mathsterk\Documents\GitHub\fiscord\Fiscord\Fiscord\bin\Debug\NAudio.xml
